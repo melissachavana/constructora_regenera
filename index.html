@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constructora Regenera</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/dist/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/dist/toastify.min.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Constructora Regenera</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Bienvenidos a Constructora Regenera</h1>
+      <p>Tú lo sueñas y nosotros lo hacemos realidad.</p>
+      <a href="#cotizar" class="btn">Cotiza tu proyecto</a>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>Nosotros</h2>
+      <p>Te acompañamos desde la idea hasta la construcción de tu proyecto sustentable.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service">
+          <img src="imagenes/empresarios-trabajando-juntos.jpg" alt="Planeación">
+          <h3>Planeación</h3>
+          <p>Te ayudamos en la concepción de tu proyecto para maximizar uso y disminuir el impacto ambiental de tu proyecto.</p>
+        </div>
+        <div class="service">
+          <img src="imagenes/retrato-hombre-trabajando-tableta.jpg" alt="Diseño">
+          <h3>Diseño</h3>
+          <p>Te asesoramos en la selección y combinación de materiales para garantizar estética y durabilidad de tu proyecto de construcción.</p>
+        </div>
+        <div class="service">
+          <img src="imagenes/retrato-joven-empresaria-tableta.jpg" alt="Gestión">
+          <h3>Gestión</h3>
+          <p>Te acompañamos en las diferentes etapas de la construcción de tu proyecto para materializar tus sueños.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cotizar" class="about-section">
+    <div class="container">
+      <h2>Cotiza tu proyecto</h2>
+      <p>El primer paso para materializar tus sueños.</p>
+    </div>
+
+    <div class="booking-container">
+      <div class="booking-form">
+        
+        
+        <select id="servicio" name="servicio" required>
+          <option value="" disabled selected>Elemento a cotizar</option>
+          <option value="servicio1">Muro</option>
+          <option value="servicio2">Techo</option>
+          <option value="servicio3">Columna</option>
+          <option value="servicio4">Viga</option>
+          <option value="servicio5">Firme</option>
+          <option value="servicio6">Cimentación</option>
+          <!-- Add more service options -->
+        </select>
+
+        <label for="largo">Largo</label>
+        <input type="text" id="largo" name="largo" required>
+        <label for="ancho">Ancho</label>
+        <input type="text" id="ancho" name="ancho" required>
+        <label for="alto">Alto</label>
+        <input type="text" id="alto" name="alto" required>
+        
+
+        <!-- Add more input fields for service details, date, time, etc. -->
+
+        <button type="button" class="quote-button" onclick="calculateEstimatedValue()">Cotizar</button>
+     </div>
+      
+
+     <div class="estimated-value" id="estimated-value-block">
+      <h3>Resumen de cotización</h3>
+      <p id="elemento">Servicio</p>
+      
+      <p id="mano-obra">$0.00</p>
+      <p id="costo-acero">$0.00</p>
+      <p id="costo-concreto">$0.00</p>
+      <p id="total">$0.00</p>
+
+
+      <button class="add-to-cart-button" onclick="addToCart()">Agregar a carrito</button>
+    </div>
+
+    </div>
+  </section>
+
+
+ 
+
+
+
+
+
+
+
+
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="contact-content">
+        <div class="contact-picture">
+          <img src="imagenes/retrato-mujer-negocios-joven-movil.jpg" alt="Contacto">
+        </div>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <a class="btn">Enviar</a>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+ 
+  
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Constructora Regenera. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+  
+
+
+</body>
+
+</html>

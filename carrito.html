@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Regenera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/dist/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/dist/toastify.min.js"></script>
+
+  
+</head>
+
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Constructora Regenera</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">Nosotros</a></li>
+          <li><a href="index.html#services">Servicios</a></li>
+          <li><a href="index.html#contact">Contacto</a></li>
+          <li><a href="#cart">Carrito</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Bienvenidos a Constructora Regenera</h1>
+        <p>Tú lo sueñas y nosotros lo hacemos realidad.</p>
+        
+      </div>
+    </section>
+    
+    <section id="cart" class="cart-section">
+        <div class="container">
+          
+          <div>
+            <h2>Tu Carrito de Cotización</h2>
+
+          </div>
+          
+          <div>
+            <ul id="cart-items" class="cart-items">
+              <!-- Cart items will be added here dynamically -->
+            </ul>
+          </div>
+          
+          
+
+          <div class="cart-buttons">
+
+          <button class="clear-cart-button" onclick="clearCart()">Vaciar Carrito</button>
+          <button class="pay-cart-button" onclick="payCart()">Pagar</button>
+          </div>
+          
+        </div>
+      </section>
+
+
+    <footer class="footer">
+        <div class="container">
+          <p>&copy; 2023 Constructora Regenera. Todos los derechos reservados.</p>
+          <div class="social-icons">
+            <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+          </div>
+        </div>
+      </footer>
+    
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+      
+
+    </body>
+    
+    </html>

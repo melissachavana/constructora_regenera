@@ -1,0 +1,584 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #3a3058;
+  padding: 20px;
+}
+
+header h1
+{
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #8a2be2;
+}
+
+/* Hero Section Styles */
+.hero {
+  background: linear-gradient(to right, #8a2be2, #7b1fa2);
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #8a2be2;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Services Section Styles */
+.services-section {
+  background: linear-gradient(to right, #f1f1f1, #d4d4d4);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+
+.service {
+  text-align: center;
+}
+
+.service img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #8a2be2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7b1fa2;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #3a3058;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ... Previous CSS Code ... */
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #8a2be2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7b1fa2;
+}
+
+/* Update Send Message Button */
+.btn-send-message {
+  background-color: #8a2be2;
+  color: #fff;
+}
+
+.btn-send-message:hover {
+  background-color: #7b1fa2;
+}
+
+/* ... Rest of the CSS Code ... */
+
+
+/* Reset default form styles */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/* Styling for the booking form and estimated value block */
+.booking-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+max-width: 75%; /* Set the maximum width to 75% */
+margin: 0 auto; /* Center the container horizontally */
+}
+
+.booking-form {
+flex: 1 0 50%; /* Set the flex value to occupy 50% of the booking container */
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.estimated-value {
+flex: 1 0 45%; /* Set the flex value to occupy 45% of the booking container */
+padding: 20px;
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+border-radius: 5px;
+text-align: center;
+}
+/* Style the form labels */
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+/* Style the form inputs and select */
+input,
+select {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+/* Style the submit button */
+.quote-button {
+background-color: #007BFF;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Hover effect on the submit button */
+.quote-button:hover {
+background-color: #0056b3;
+}
+
+/* Style the estimated value block */
+#estimated-amount {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.add-to-cart-button {
+background-color: #28a745;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+background-color: #218838;
+}
+
+
+.estimated-value {
+display: none;
+}
+
+
+.cart-container {
+position: fixed;
+top: 20px;
+right: 20px;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+padding: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-content {
+max-width: 250px;
+}
+
+
+/* Your existing styles here */
+
+/* Styles for the cart section */
+.cart-section {
+padding: 50px 0;
+background-color: #f8f8f8;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+
+/* ... (your existing CSS styles) */
+
+/* Styles for the cart section */
+.cart-section {
+padding: 50px 0;
+background-color: #f8f8f8;
+}
+
+.cart-items {
+list-style: none;
+padding: 0;
+}
+
+.cart-items li {
+margin-bottom: 10px;
+padding: 10px;
+border: 1px solid #ddd;
+background-color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap as needed */
+  margin-top: 20px; /* Add margin to separate from the list */
+}
+
+.clear-cart-button {
+background-color: #4c08ec;
+color: #fff;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+
+}
+
+
+.pay-cart-button{
+background-color: #ede907;
+color: #0e0e0e;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+
+}
+
+.clear-cart-button:hover {
+background-color: #3086ff;
+}
+
+.pay-cart-button:hover{
+background-color: #0be466;
+}
+
+ 
+
+.cart-section, .about-section, .contact-section, .hero, .services-section{
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 60px 60px;
+  margin: 20px 20px;
+
+}
+
+.contact-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.service {
+  text-align: center;
+}
+
+.service img {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height to maintain aspect ratio */
+  margin-bottom: 20px;
+  border-radius: 4%; /* Add rounded border */
+  border: 1px solid #ccc; /* Add a border */
+}
+
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-picture {
+  flex: 1 0 30%; /* Set to occupy 30% of screen width */
+  padding: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contact-picture img {
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid #cccccc0c;
+}
+
+.contact-form {
+  flex: 1 0 calc(70% - 10px); /* Set to occupy 70% of screen width and adjust for margin */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  margin-top: 20px; /* Add some top margin */
+}
+
+.contact-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #8a2be2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #7b1fa2;
+}
